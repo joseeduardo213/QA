@@ -1,13 +1,29 @@
 {
   "name": "n",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.29.0"
-  }
+    "@cucumber/playwright": "^3.1.0",
+    "@playwright/test": "^1.29.0",
+    "chai": "^4.3.7"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "playwright-core": "^1.29.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseeduardo213/QA.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joseeduardo213/QA/issues"
+  },
+  "homepage": "https://github.com/joseeduardo213/QA#readme",
+  "description": ""
 }
