@@ -7,7 +7,7 @@ test('create acount and buy dresses', async ({ page }) => {
   //create account
   await page.getByRole('link', { name: ' Signup / Login' }).click();
   await page.getByPlaceholder('Name').fill('j');
-  await page.locator('form').filter({ hasText: 'Signup' }).getByPlaceholder('Email Address').fill('randomemail@0gy1.com');
+  await page.locator('form').filter({ hasText: 'Signup' }).getByPlaceholder('Email Address').fill('random1email@0gy1.com');
   await page.getByRole('button', { name: 'Signup' }).click();
 
   //enter account information

@@ -11,7 +11,7 @@ import { devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 const config: PlaywrightTestConfig = {
-  testDir: './tests',
+  
   /* Maximum time one test can run for. */
   timeout: 50 * 1000,
   expect: {
@@ -57,7 +57,6 @@ const config: PlaywrightTestConfig = {
         ...devices['Desktop Firefox'],
       },
     },
-
     {
       name: 'webkit',
       use: {
