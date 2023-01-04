@@ -60,11 +60,8 @@ export default class registerAccount{
     }
 
     async clickToCreateAccount() { 
-        await Promise.all([
-            this.page.waitForNavigation({waitUntil:"networkidle"}),
-            this.page.getByRole('button', { name: 'Create Account' }).click(),
-            this.page.getByRole('link', { name: 'Continue' }).click(),
-        ])
+        await this.page.getByRole('button', { name: 'Create Account' }).click();
+        await this.page.getByRole('link', { name: 'Continue' }).click();
     }
 
 }     

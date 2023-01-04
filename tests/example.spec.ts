@@ -18,7 +18,7 @@ test('create acount and buy dresses', async ({ page }) => {
   await page.goto('https://automationexercise.com/')
   
   //create account
-  await create.signUp('Pablo', 'pablo@randonm213.com')
+  await create.signUp('Pablo', 'pabloew@randonm213.com')
   
   //enter account information
   //if tner is an error in the first step of this section, the email must be changed and run again
@@ -39,7 +39,7 @@ test('create acount and buy dresses', async ({ page }) => {
   
 
   //filter dresses on the search bar
-  await searhing.enterSearch('dress')
+  await searhing.enterSearch('Dress')
 
   //adds to its cart all dresses
   //sometimes when running this part of the program ther is an error, and its because the page contains ads that appear randomly, and because that, the program cant continue with the process because it does not find the button that must be pressed

@@ -1,5 +1,5 @@
-import type { PlaywrightTestConfig } from '@playwright/test';
-import { devices } from '@playwright/test';
+const type { PlaywrightTestConfig } = require ('@playwright/test')
+const {devices} = require ('@playwright/test')
 
 /**
  * Read environment variables from file.

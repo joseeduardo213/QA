@@ -1,5 +1,6 @@
 import {Given, When, Then} from "@cucumber/cucumber"
 import { test, expect } from '@playwright/test';
+const {createAccount} = require ('../pages/signupPage')
 
 test("initial registration to create the account", async ({ page }) =>{
     Given("on the login/signup page", async ()=>{
@@ -7,7 +8,7 @@ test("initial registration to create the account", async ({ page }) =>{
         await page.getByRole('link', { name: ' Signup / Login' }).click();
     })
 
-    When("i register with the name 'j' and email address 'random1email@0gy1.com'", async ()=>{
+    When("i register with the name 'j' and email address 'random154email@0gy1.com'", async ()=>{
         await page.getByPlaceholder('Name').fill('j');
         await page.locator('form').filter({ hasText: 'Signup' }).getByPlaceholder('Email Address').fill('random1email@0gy1.com');
         await page.getByRole('button', { name: 'Signup' }).click();

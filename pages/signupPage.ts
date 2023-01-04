@@ -22,9 +22,8 @@ export default class createAccount{
         await this.page.locator('form').filter({ hasText: 'Signup' }).getByPlaceholder('Email Address').fill(email);
     }
     async clickContinueToSignUp() { 
-        await Promise.all([
-            this.page.waitForNavigation({waitUntil:"networkidle"}),
-            this.page.getByRole('button', { name: 'Signup' }).click()
-        ])
+       
+        await this.page.getByRole('button', { name: 'Signup' }).click()
+        
     }
 }

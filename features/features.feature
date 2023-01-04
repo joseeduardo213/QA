@@ -2,7 +2,7 @@ Feature: As a user i want to create an account, search for dresses and buy them
 
 Scenario: initial registration to create the account
 Given on the login/signup page
-When i register with the name 'j' and email address 'random1email@0gy1.com'
+When i register with the name 'j' and email address 'random154email@0gy1.com'
 Then it takes me to the personal data registration page
 
 Scenario: fill in registration data

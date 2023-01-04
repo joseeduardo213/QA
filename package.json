@@ -367,7 +367,7 @@
   },
   "scripts": {
     "test": "tests",
-    "feature": "features"
+    "test:e2e": "cucumber-js --require playwright.config.ts --require feature/steps/*.ts --format @cucumber/pretty-formatter"
   },
   "repository": {
     "type": "git",
